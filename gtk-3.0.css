@@ -1,0 +1,86 @@
+/* Copyright (c) 2023 Ishan Pranav */
+/* Licensed under the MIT license */
+
+/* This is an example GTK CSS file that can be used with Gnucash.
+   Simply copy this file to the location specified below according
+   to your platform and then restart gnucash.
+
+  - Windows: CSIDL_APPDATA/GnuCash
+    (or the default is users\%USERNAME%\AppData\Roaming\GnuCash)
+
+  - OS X: $HOME/Application Support/GnuCash
+
+  - Linux: $XDG_CONFIG_HOME/gnucash
+    (or the default is $HOME/.config/gnucash)
+
+  These settings are mainly to do with register colors and can be seen
+  when the preference setting 'Register\Use GnuCash built-in color theme'
+  is unset.
+
+  Note: Widgets obtained from Glade files will not be addressable
+  directly by name as these are not brought in when loaded, only
+  the widget type can be configured unless they are named in code.
+*/
+
+/* Application wide font setting */
+* {
+    font: 9pt "Segoe UI";
+}
+
+
+/* Register sheet font setting */
+gnc-id-sheet {
+    font: 9pt "Segoe UI";
+}
+
+
+/* Register header font setting */
+gnc-id-header {
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+/* Register User Colors, remove 'user' for builtin register values */
+.gnc-class-user-register-header {
+    background-color: white;
+    color: black;
+    border: 1px solid gainsboro;
+}
+
+.gnc-class-user-register-primary {
+    background-color: white;
+    color: black;
+}
+
+.gnc-class-user-register-primary:disabled {
+    background-color: gainsboro;
+}
+
+.gnc-class-user-register-secondary {
+    background-color: #DDEDE0;
+    color: black;
+}
+
+.gnc-class-user-register-secondary:disabled {
+    background-color: gainsboro;
+}
+
+.gnc-class-user-register-split {
+    background-color: #E3EFFF;
+    color: black;
+}
+
+.gnc-class-user-register-split:disabled {
+    background-color: plum;
+}
+
+.gnc-class-user-register-cursor {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.gnc-class-highlight {
+    color: #4E9E19;
+}
